@@ -1,0 +1,8 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gitea
+  namespace: {{ .values.namespaces }}
+spec:
+  replicas: {{ .values.replicas }}
+  template
